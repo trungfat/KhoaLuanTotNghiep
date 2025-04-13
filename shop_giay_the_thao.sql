@@ -6,7 +6,6 @@ use master
 go
 create database shop_giay_the_thao
 go
-
 CREATE TABLE `authority` (
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

@@ -141,7 +141,7 @@ async function requestPayMentMomo() {
     });
     var result = await res.json();
     if (res.status < 300) {
-        window.open(result.url, '_blank');
+        window.location.href = result.url;
     }
     if (res.status == exceptionCode) {
         toastr.warning(result.defaultMessage);
@@ -177,7 +177,7 @@ async function requestPayMentVnpay() {
     });
     var result = await res.json();
     if (res.status < 300) {
-        window.open(result.url, '_blank');
+        window.location.href = result.url;
     }
     if (res.status == exceptionCode) {
         toastr.warning(result.defaultMessage);
@@ -213,7 +213,7 @@ async function requestPayMentGpay() {
     });
     var result = await res.json();
     if (res.status < 300) {
-        window.open(result.url, '_blank');
+        window.location.href = result.url;
     }
     if (res.status == exceptionCode) {
         toastr.warning(result.defaultMessage);
